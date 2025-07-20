@@ -8,7 +8,7 @@ const projects = [
     title: "Portfolio Website",
     description: "A personal portfolio to showcase my work and skills.",
     tech: ["React", "Tailwind CSS"],
-    live: "https://your-portfolio.com",
+    live: "themukul12.netlify.app",
     github: "https://github.com/yourusername/portfolio",
   },
   {
