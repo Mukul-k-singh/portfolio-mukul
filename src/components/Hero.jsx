@@ -1,6 +1,6 @@
 import React from 'react';
 import profile from '../assets/meeee.jpg'
-import Resume from '../assets/Resume.pdf'
+import Resume from '../assets/resumee.pdf'
 import { FaDownload } from "react-icons/fa";
 import { motion } from "motion/react"
 

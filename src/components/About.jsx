@@ -22,7 +22,8 @@ const About = () => {
                 <div className='h-full w-full md:flex-1/2 flex flex-col justify-center items-center'>
                     <div className='max-h-max max-w-max px-7 py-2'>
                         <h2 className='text-3xl sm:text-5xl font-semibold mb-5'>Heading</h2>
-                        <p className='text-md sm:text-xl'>I am Mukul Kumar Singh. I am a student of IMS Engineering College, Ghaziabad. I'm currently in 4th year. I have learned full stack web development and build some projects. I also have interest in Data Structure & Algorithm and I enjoy solving dsa problems.</p>
+                        <p className='text-md sm:text-xl'>
+                            I am Mukul Kumar Singh. I am a student of IMS Engineering College, Ghaziabad. I'm currently in 4th year. I have learned full stack web development and build some projects. I also have interest in Data Structure & Algorithm and I enjoy solving dsa problems.</p>
                     </div>
                 </div>
             </div>

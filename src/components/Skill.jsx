@@ -16,7 +16,7 @@ import { motion } from "motion/react"
 const Skill = () => {
 
   return (
-    <div className="h-full w-full flex items-center justify-center py-3">
+    <div className="h-full w-full flex  items-center justify-center py-3">
       <div className=" py-4 px-6 h-[95%] md:p-7 w-full md:w-[90%] flex flex-col">
         <motion.h2 
         className="text-3xl md:text-5xl font-semibold mb-4 text-center text-white"
