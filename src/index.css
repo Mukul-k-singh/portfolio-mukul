@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+*{
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+.scrollbar-custom::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: #1f2937; /* Tailwind gray-800 */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #e5e9e9; /* Tailwind blue-500 */
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: #2563eb; /* Tailwind blue-600 */
+}
+
+.skillborder::after,
+.skillborder::before{
+  background: conic-gradient(from var(--angle),transparent 60%, rgb(28, 186, 28));
+  animation: 2s circular linear infinite;
+}
+
+.skillborder::before{
+  filter: blur(0.5rem);
+    opacity: 1;
+}
+
+.skillborder::after,
+.skillborder::before,
+.borderAnimate::after,
+.borderAnimate::before {
+    content: '';
+    inset: 0;
+    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 0.75rem;
+    padding: 0.2rem;
+    
+}
+
+.borderAnimate::after,
+.borderAnimate::before{
+  background: conic-gradient(from var(--angle), red,yellow,rgb(14, 239, 239),rgb(64, 235, 7),violet,red);
+  animation: 3s circular linear infinite;
+}
+.borderAnimate::before {
+    filter: blur(0.5rem);
+    opacity: 0.5;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+} 
+
+@keyframes circular {
+    0% {
+        --angle: 0deg;
+    }
+    100% {
+        --angle: 360deg;
+    }
+}
